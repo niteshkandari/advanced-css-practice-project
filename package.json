@@ -1,0 +1,22 @@
+{
+  "name": "advanced-css-practice-project",
+  "version": "1.0.0",
+  "description": "css-practise-project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss css/style.css --w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niteshkandari/advanced-css-practice-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niteshkandari/advanced-css-practice-project/issues"
+  },
+  "homepage": "https://github.com/niteshkandari/advanced-css-practice-project#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

@@ -1,5 +1,6 @@
 .btn{
-  &:link,
+  &,//since button ele doesnt have down below psudo classes
+  &:link, // anchor tag psuedo class
   &:visited {
     text-transform: uppercase;
     text-decoration: none;
@@ -9,6 +10,9 @@
     transition: all 0.2s;
     position: relative;
     font-size: $default-font-size;
+    border:none;
+    cursor:pointer;
+ 
   }
   &:hover {
     transform: translateY(-0.3rem);
@@ -18,7 +22,9 @@
       opacity: 0;
     }
   }
-  &:active {
+  &:active,
+  &:focus {
+    outline:none;
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, .2);
   }
@@ -28,6 +34,13 @@
     &::after {
       background-color: $color-white;
     }
+  }  
+    &--green {
+      background-color: $color-primary;
+      color: $color-white;
+      &::after {
+        background-color: $color-primary;
+      }
   }
   &::after {
     content: "";
